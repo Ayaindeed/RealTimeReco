@@ -1,4 +1,7 @@
 # Real-Time Content Recommendation System Requirements
+# 
+# NOTE: For GitHub Actions CI/CD, use requirements-ci.txt for faster builds
+# This file contains the complete production dependencies
 
 # Core API Framework
 fastapi==0.116.1
@@ -25,8 +28,8 @@ kafka-python==2.2.15
 requests==2.32.4
 httpx==0.25.2
 
-# Big Data Processing
-pyspark==3.5.0         # For Hadoop integration
+# Big Data Processing (optional for development)
+# pyspark==3.5.0         # Comment out if causing issues
 
 # Monitoring & Logging
 python-json-logger==2.0.7
