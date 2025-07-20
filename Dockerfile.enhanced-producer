@@ -1,0 +1,17 @@
+FROM python:3.9-slim
+
+# Install required packages
+RUN pip install kafka-python pandas numpy
+
+# Create working directory
+WORKDIR /app
+
+# Copy the enhanced event producer
+COPY src/data_collection/enhanced_event_producer.py /app/
+COPY src/user_storage/hbase_manager.py /app/
+
+# Set Python path
+ENV PYTHONPATH=/app
+
+# Run the enhanced event producer
+CMD ["python", "enhanced_event_producer.py"]
