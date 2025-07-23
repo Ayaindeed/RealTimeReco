@@ -1,4 +1,4 @@
-# Real-Time Content Recommendation System Requirements
+#  Requirements
 # 
 # NOTE: For GitHub Actions CI/CD, use requirements-ci.txt for faster builds
 # This file contains the complete production dependencies
@@ -29,7 +29,7 @@ requests==2.32.4
 httpx==0.25.2
 
 # Big Data Processing (optional for development)
-# pyspark==3.5.0         # Comment out if causing issues
+# pyspark==3.5.0       
 
 # Monitoring & Logging
 python-json-logger==2.0.7
@@ -37,8 +37,3 @@ prometheus-client==0.19.0
 
 # Caching (optional)
 redis==5.0.1
-
-# Code Quality (for development)
-black==24.10.0
-flake8==6.0.0
-pytest==7.4.4
